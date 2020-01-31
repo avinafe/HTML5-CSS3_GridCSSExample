@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fbfbfb;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: 100px;
+}
+.item {
+  background: #58d5f6;
+  color: white;
+  overflow: hidden;
+}
+.item > img {
+  width: 100%;
+  height: auto;
+}
+.item:nth-child(even) {
+  background: #236fc8;
+}
